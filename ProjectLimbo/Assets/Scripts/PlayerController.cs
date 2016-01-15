@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     public float JumpForce = 5;
     public float MovementSpeed = .05f;
 
+    public bool facingRight = true;
+
 	void Start () {
         rigidBody = GetComponent<Rigidbody2D>();
 	}
@@ -21,10 +23,26 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKey(KeyCode.D))
             {
                 transform.Translate(MovementSpeed, 0, 0);
+
+                if (!facingRight)
+                {
+                    Vector3 currentScale = transform.localScale;
+                    currentScale.x = Mathf.Abs(currentScale.x);
+                    transform.localScale = currentScale;
+                    facingRight = true;
+                }
+                
             }
             if(Input.GetKey(KeyCode.A))
             {
                 transform.Translate(-MovementSpeed, 0, 0);
+                if (facingRight)
+                {
+                    facingRight = false;
+                    Vector3 currentScale = transform.localScale;
+                    currentScale.x = -Mathf.Abs(currentScale.x);
+                    transform.localScale = currentScale;
+                }
             }
             
             //if the player wants to jump and the character isn't jumping
