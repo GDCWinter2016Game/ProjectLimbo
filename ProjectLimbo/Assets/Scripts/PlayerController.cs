@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour {
 
     Rigidbody2D rigidBody;
     Collider2D sad;
-    PlayerState currentState = PlayerState.Idle;
+    public PlayerState currentState = PlayerState.Idle;
     public float JumpForce = 5;
     public float MovementSpeed = .05f;
 
@@ -31,8 +31,17 @@ public class PlayerController : MonoBehaviour {
                     transform.localScale = currentScale;
                     facingRight = true;
                 }
-                
+
+				if(currentState != PlayerState.Jumping){
+				    currentState = PlayerState.Running;
+				}
+
             }
+
+			if(Input.GetKeyUp(KeyCode.D)){
+				currentState = PlayerState.Idle;
+			}
+
             if(Input.GetKey(KeyCode.A))
             {
                 transform.Translate(-MovementSpeed, 0, 0);
@@ -43,8 +52,17 @@ public class PlayerController : MonoBehaviour {
                     currentScale.x = -Mathf.Abs(currentScale.x);
                     transform.localScale = currentScale;
                 }
+
+				if(currentState != PlayerState.Jumping){
+					currentState = PlayerState.Running;
+				}
             }
             
+			if(Input.GetKeyUp(KeyCode.A)){
+				currentState = PlayerState.Idle;
+			}
+
+
             //if the player wants to jump and the character isn't jumping
             if (Input.GetKeyDown(KeyCode.Space) && currentState != PlayerState.Jumping)
             {
@@ -77,7 +95,7 @@ public class PlayerController : MonoBehaviour {
     void OnTriggerStay2D(Collider2D collider)
     {
         //player is still on a platform
-        if(collider.CompareTag("Platform"))
+        if(collider.CompareTag("Platform") && currentState != PlayerState.Running)
         {
             currentState = PlayerState.Idle;
         }

@@ -5,6 +5,7 @@ using System.Collections;
     public enum PlayerState
     {
         Idle,
-        Jumping
+        Jumping,
+	    Running
     }
 
