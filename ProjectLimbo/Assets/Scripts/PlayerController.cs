@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 	
 	void Update () {
         //pc controls
-	    if(Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer)
+		if(Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXEditor || Application.platform == RuntimePlatform.OSXPlayer)
         {
             if (Input.GetKey(KeyCode.D))
             {
