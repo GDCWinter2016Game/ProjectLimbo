@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: bc647833302dc264ba41514a66736f38
+timeCreated: 1458439416
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Jean_Idle 1_1
+    21300002: Jean_Idle 1_2
+    21300004: Jean_Idle 1_4
+    21300006: Jean_Idle 1_6
+    21300008: Jean_Idle 1_9
+    21300010: Jean_Idle 1_26
+    21300012: Jean_Idle 1_28
+    21300014: Jean_Idle 1_29
+    21300016: Jean_Idle 1_30
+    21300018: Jean_Idle 1_43
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Jean_Idle 1_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 4682
+        width: 958
+        height: 2052
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_2
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 4682
+        width: 918
+        height: 2047
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_4
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 4682
+        width: 832
+        height: 2008
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_6
+      rect:
+        serializedVersion: 2
+        x: 4129
+        y: 4682
+        width: 786
+        height: 1969
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_9
+      rect:
+        serializedVersion: 2
+        x: 5311
+        y: 4687
+        width: 781
+        height: 1897
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_26
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 2380
+        width: 901
+        height: 2051
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_28
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 2380
+        width: 843
+        height: 2012
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_29
+      rect:
+        serializedVersion: 2
+        x: 4102
+        y: 2380
+        width: 774
+        height: 1972
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jean_Idle 1_30
+      rect:
+        serializedVersion: 2
+        x: 5403
+        y: 2388
+        width: 777
+        height: 1916
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
